@@ -1,3 +1,5 @@
+-- 4.soru
+
 filterandmap e f xs = map f (filter e xs)
 
 sumOfEvenFM y = foldl (\acc x -> acc + x) 0 (filterandmap (even) (^2) [1..y])
