@@ -9,3 +9,6 @@ butlast [x,y] = x
 butlast (x:xs) = butlast xs
 
 -- - [1, 2, 3]
+
+myButLast = head . tail . reverse
+-- [1, 2, 3]

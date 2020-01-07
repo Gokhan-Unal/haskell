@@ -11,4 +11,7 @@ findlast [x] = x
 findlast (_:xs) = findlast xs
 
 
+
+myLast' = head . reverse
+
 -- - [1,2,3]

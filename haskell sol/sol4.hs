@@ -4,8 +4,12 @@
 -- - λ> myLength "Hello, world!"
 -- - 13
 
-myLength :: [a] -> Int
-myLength [] = 0
-myLength (x:xs) = 1 + myLength xs
+-- myLength :: [a] -> Int
+-- myLength [] = 0
+-- myLength (x:xs) = 1 + myLength xs
+
+myLength1 :: [a] -> Int
+myLength1 =  foldl (\acc x -> acc + 1) 0
 
 -- - [1, 2, 3]
+
